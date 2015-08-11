@@ -31,8 +31,8 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 * HTML/CSS
 * CSS or jQuery - image transitions?
 * JS/jQuery for quiz questions and printing results
-* Jasmine
-* Google Maps API
+* Jasmine testing
+* Google Maps JavaScript API
 
 ###Paradigm
 * OOP - will continually be adding new hikes with specific features, so will need prototypes. Need a master results object that if statements will pull from based on user input
