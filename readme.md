@@ -36,7 +36,7 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 
 ### Wire Framing
 
-![sketch]
+![sketch] (../img/hike-wireframe.jpg )
 
 ###Stretch Goals
 * Make quiz interactive, ciricling answers, graphics for selections (mountains for difficulty)
