@@ -18,7 +18,7 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 * Children? yes or no
 * Visiting colorado? yes or no (altitude adjustment)
 * Features? (panoramic views, waterfalls, lakes)
-* Location
+* Location - where are you staying/ how far do you want to travel
 
 ####Quiz Results:
 * Your specifications with lakes, with waterfalls
@@ -42,6 +42,7 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 
 ###Challenges
 * How to generate results dependent on user specifications/ give suggestions for various options dependent on what they are looking for (ie if want an easy hike with waterfalls but this does not match any hike, first suggest easy hike, and in alternative suggestions, give easiest hike with waterfall)
+* Calculating hikes based on user location in CO and how far they want to travel
 
 ###Stretch Goals
 * Make quiz interactive, ciricling answers, graphics for selections (mountains for difficulty)
