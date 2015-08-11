@@ -18,6 +18,7 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 * Children? yes or no
 * Visiting colorado? yes or no (altitude adjustment)
 * Features? (panoramic views, waterfalls, lakes)
+* Location
 
 ####Quiz Results:
 * Your specifications with lakes, with waterfalls
@@ -53,3 +54,4 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 * Quiz: click button on homepage to get started -->opens up a pop up of first quiz question, blurs the background, should questions be interactive? (circle answer)
 * Image Transitions - when click master image on results page, a seperate overlay will pop up and allow you to swipe through other images, have users add their own??
 * Blurb: Have you ever wanted to find the perfect hike, but felt overwhelmed by the plethora of insufficient resources that take too much time an energy to search through? miHike does the work for you. Based on your answers to a few simple questions regarding your past and intended experiences hiking, miHike will offer  suggestions for your ideal adventure experience.
+* Hikes to include: Boulder Flatirons, Garden of the Gods, The Loch (waterfall on the way there = easier, sky pond = harder), hike in Breckenridge, Lake Isabelle, Red Feather Lakes (easy), hike off the Boulder path with rock formations (look up name), Maroon Bells (easy), Bear Trail in RMNP (medium)
