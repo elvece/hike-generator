@@ -13,13 +13,13 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 
 ####Quiz Questions:
 * Length of hike: few hours, half day, whole day
-* Ability level: beginner, intermediate, advanced (having a fit guide for each category)
+* Ability level: beginner, intermediate, advanced (having a fit guide for each category, pop up)
   *Not sure? : how many hikes have you been on?, age?, do you exercise regularly?
 * Children? yes or no
 * Visiting colorado? yes or no (altitude adjustment)
 * Features? (panoramic views, waterfalls, lakes)
 * Location - where are you staying/ how far do you want to travel
-* Pay for entrance? yes or no
+* Pay for entrance?
 
 ####Quiz Results:
 * Your specifications with lakes, with waterfalls
@@ -52,6 +52,7 @@ miHike aims to provide an easy and efficent hike gerentating service for individ
 * User contributions
 * Build database (based on personal experiences)
 * Use an API (? not sure because I ideally want to build my own database)
+* Make mobile responsive
 
 ###Personal Notes
 * Quiz: click button on homepage to get started -->opens up a pop up of first quiz question, blurs the background, should questions be interactive? (circle answer)
