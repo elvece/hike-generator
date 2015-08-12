@@ -29,3 +29,14 @@
 * links to other suggestion pages
 
 ##JS
+
+##Questions
+* When get result, pull page of that result and view that? or do i append to the dom with the particular pieces that need to be on the page for that result?
+*
+
+
+NOTES:
+priority ranking
+make sure every hike has a answer to every question
+weather api
+MVP - mininum viable product

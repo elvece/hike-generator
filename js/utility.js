@@ -1,5 +1,18 @@
 //JS Logic
 
+//map initalize
+function initialize() {
+  var mapCanvas = document.getElementById('map');
+   var mapOptions = {
+      center: new google.maps.LatLng(39.0708, -106.9890),
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+//quiz questions
 var quiz = [
   {
     uniqueID: 1,
@@ -41,3 +54,4 @@ var quiz = [
     question: "Select the features you want:",
     options: ["Panoramic Views", "Waterfalls", "Wildflowers", "Wildlife", "Lake", ],
   },
+];
