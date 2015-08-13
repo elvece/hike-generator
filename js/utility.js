@@ -52,12 +52,13 @@ var optionsArr = getOptions(quiz);
 
 
 
+for(key in quiz){
+    // The key is key
+    // The value is quiz[key]
+}
 
 
-
-
-
-
+function quiz(priority, question, options)
 
 
 

@@ -1,15 +1,17 @@
 //quiz questions
-var quiz = [
-  {
+var quiz = {
+
+  "Question1": {
     Priority: 1,
     Question: "How long are you looking to hike?",
     Options: [
       "A few hours",
       "Half-day",
       "Whole day"
-    ],
+    ]
   },
-  {
+
+  "Question2": {
     Priority: 2,
     Question: "How would you rate your ability level?",
     Options: [
@@ -18,7 +20,8 @@ var quiz = [
       "Advanced"
     ],
   },
-  {///select features you want, different input type eventually since can select more than one?
+
+  "Question3": {///select features you want, different input type eventually since can select more than one?
     Priority: 3,
     Question: "Select a feature you are interested in:",
     Options: [
@@ -28,6 +31,7 @@ var quiz = [
       //wildflowers, wildlife
     ],
   }
+};
   // {
   //   Priority: 3,
   //   Question: "Do you have children that will be hiking with you?",
@@ -53,22 +57,23 @@ var quiz = [
   //   Question: "Does paying a park fee make a difference?",
   //   Options: ["Yes", "No", "I would prefer not to, but it's not a deciding factor"],
   // },
-];
+
 
 //hike data object
-var allHikes = [
-  {
+var allHikes = {
+
+  "Hike1": {
     UniquieID: 1,
     Name: "Maroon Creek Trail",
     Location: "Maroon Bells, Aspen, CO",
     Distance: "3.2 miles one way",
     Duration: "2.5 hours one way",
-    Difficulty: "Easy",
+    Difficulty: "Easy",//1
     Feature: "Lake"
     //whole day because location?
   },
 
-  {
+  "Hike2": {
     UniquieID: 2,
     Name: "Alberta Falls",
     Location: "Rocky Mountain National Park, Estes Park, CO",
@@ -78,7 +83,8 @@ var allHikes = [
     Feature: "Waterfall"
     //half day
   },
-  {
+
+  "Hike3": {
     UniquieID: 3,
     Name: "Flatirons Vista",
     Location: "Chautauqua Park, Boulder, CO",
@@ -88,17 +94,19 @@ var allHikes = [
     Feature: "Views"
     //few hours
   },
-  {
+
+  "Hike4": {
     UniquieID: 4,
     Name: "Isabelle Lake",
     Location: "Indian Peaks Wilderness, Brainard Lake Recreation Area, Nederland, CO",
     Distance: "4.2 miles roundtrip",
     Duration: "2.5 hours",
-    Difficulty: "Medium",
+    Difficulty: "Medium",//2
     Feature: "Lake"
       //half day
   },
-  {
+
+  "Hike5": {
     UniquieID: 5,
     Name: "Hanging Lake",
     Location: "Glenwood Springs, CO",
@@ -108,7 +116,8 @@ var allHikes = [
     Feature: "Waterfall"
     //whole day because of location?
   },
-  {
+
+  "Hike6": {
     UniquieID: 6,
     Name: "Carpenter Peak Trail",
     Location: "Roxborough State Park, Littleton, CO",
@@ -118,17 +127,19 @@ var allHikes = [
     Feature: "Views"
     //few hours
   },
-  {
+
+  "Hike7": {
     UniquieID: 7,
     Name: "Sky Pond",
     Location: "Rocky Mountain National Park, Estes Park, CO",
     Distance: "9.0 miles roundtrip",
     Duration: "7 hours",
-    Difficulty: "Hard",
+    Difficulty: "Hard",//3
     Feature: "Lake"
     //whole day
   },
-  {
+
+  "Hike8": {
     UniquieID: 8,
     Name: "Mohawk Lakes",
     Location: "Breckenridge, CO",
@@ -138,7 +149,8 @@ var allHikes = [
     Feature: "Waterfall"
     //few hours
   },
-  {
+
+  "Hike9": {
     UniquieID: 9,
     Name: "Deer Mountain",
     Location: "Rocky Mountain National Park, Estes Park, CO",
@@ -148,4 +160,4 @@ var allHikes = [
     Feature: "Views"
     //half day
   },
-];
+};

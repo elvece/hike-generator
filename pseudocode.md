@@ -32,6 +32,7 @@
 
 ##Questions
 * When get result, pull page of that result and view that? or do i append to the dom with the particular pieces that need to be on the page for that result?
+*how to change values for each option in html
 
 ##NOTES:
 *priority ranking
