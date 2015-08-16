@@ -17,48 +17,69 @@
 // }
 // google.maps.event.addDomListener(window, 'load', initialize);
 
-  //-----------//
- //---QUIZ----//
-//-----------//
-//in, process, out
-//WHAT IS THE BETTER WAY TO DO THIS? HOW CAN I BETTER ACCESS QUIZ OBJECT???
+//add helper functions and results comparision
 
 
+//SELECTIONS/ OPTIONS COMPARISON
+//for, through selections array
+//for, through hikes array
 
-//gets questions from an array and pushes them into a new array
-function getQuestion(arr){
-  var tempArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    var question = arr[i].Question;
-    tempArr.push(question);
+//ifs, filter
+//breakdown into functions for each question
+
+//will return the unique id of chosen hike
+function getResults(){
+
+    // question 1, option 1
+    if (selections[0] === "0"){
+
+      if (selections[1] === "1"){
+        return 3;
+      }
+      if (selections[1] === "2"){
+        return 6;
+      }
+      if (selections[1] === "3"){
+        return 8;
+      }
+    }
+    //question 1, option 2
+    if (selections[0] === "1"){
+
+      if (selections[1] === "0"){
+        return 2;
+      }
+      if (selections[1] === "1"){
+        return 4;
+      }
+      if (selections[1] === "2"){
+        return 9;
+      }
+    }
+    //question 1, option 3
+    if (selections[0] === "2"){
+
+      if (selections[1] === "0"){
+        return 1;
+      }
+      if (selections[1] === "1"){
+        return 5;
+      }
+      if (selections[1] === "2"){
+        return 7;
+      }
+    }
+}
+
+function getHikeInfo(num){
+  for (var i = 0; i < hikeArr.length; i++) {
+    if (hikeArr[i].uuid === parseInt(num)){
+      return hikeArr[i];
+    }
   }
-  return tempArr;
-}
-//variable to hold questions from quiz array
-var questionArr = getQuestion(quiz);
-
-
-//gets options from an array and pushes them into a new array
-function getOptions(arr){
-  var tempArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    var options = arr[i].Options;
-    tempArr.push(options);
-  }
-  return tempArr;
-}
-//variable to hold options from quiz array
-var optionsArr = getOptions(quiz);
-
-
-
-for(key in quiz){
-    // The key is key
-    // The value is quiz[key]
 }
 
 
-function quiz(priority, question, options)
 
 
 
@@ -67,14 +88,4 @@ function quiz(priority, question, options)
 
 
 
-
-
-//??OOP - could make a question class and answer class, then a render method
-// function Questions (obj, key){
-//   this.obj = obj;
-//   this.key = key;
-// }
-// var question1 = Question.prototype.method_name = function(first_argument) {
-//   // body...
-// };
 
