@@ -32,7 +32,6 @@
 
 ##Questions
 * When get result, pull page of that result and view that? or do i append to the dom with the particular pieces that need to be on the page for that result?
-*how to change values for each option in html
 
 ##NOTES:
 *priority ranking
@@ -40,7 +39,7 @@
 *weather api
 *MVP - mininum viable product
 *Naismith's rule: allow 1 hour for every 3 miles (5 km) forward, plus 1 hour for every 2000 feet (600 metres) of ascent.
-
+***progress for how far you have gone in quiz, dude walking up a mountain
 
 ##Quiz Breakdown
 
@@ -80,31 +79,6 @@ half day hike, intermediate, lake == 4
 
 --find most frequent option and return that result
 --how do I handle if not all categories are met?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
