@@ -1,31 +1,9 @@
-//JS Logic
+//JS Utility file - helper functions
 
-  //----------//
- //---MAP----//
-//----------//
-
-//map initalize
-//add marker to spot
-// function initialize() {
-//   var mapCanvas = document.getElementById('map');
-//    var mapOptions = {
-//       center: new google.maps.LatLng(39.0708, -106.9890),
-//       zoom: 10,
-//       mapTypeId: google.maps.MapTypeId.TERRAIN
-//     };
-//   var map = new google.maps.Map(mapCanvas, mapOptions);
-// }
-// google.maps.event.addDomListener(window, 'load', initialize);
-
-//add helper functions and results comparision
-
-
-//SELECTIONS/ OPTIONS COMPARISON
-//for, through selections array
-//for, through hikes array
-
-//ifs, filter
-//breakdown into functions for each question
+//create question on DOM using index from quiz array
+function createQuestion (index){
+  quizArr[index].render();
+}
 
 //will return the unique id of chosen hike
 function getResults(){
@@ -79,13 +57,24 @@ function getHikeInfo(num){
   }
 }
 
-
-
-
-
-
-
-
-
+//map initalize
+function initialize() {
+  var results = getHikeInfo(getResults());
+  var mapCanvas = document.getElementById('map');
+  var latitude = results.map[0];
+  var longitude = results.map[1];
+  var latLng = new google.maps.LatLng(latitude, longitude);
+  var mapOptions = {
+      center: latLng,
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.TERRAIN
+    };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({
+    position: latLng,
+    map: map,
+    title: results.name
+  });
+}
 
 

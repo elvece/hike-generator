@@ -1,6 +1,7 @@
 // jQuery DOM maniuplation
 
 $(document).on('ready', function() {
+
   //start button
   var start = $('#start');
   //next button
@@ -21,7 +22,6 @@ function chooseOption() {
 
 //display next question and next button
 function displayNext() {
-  var quiz = $('#quiz');
   quiz.fadeOut(function() {
     //if question counter is less than the length of the quiz array, make the next question appear by creating it using the create question function using the current value of the question counter as the index
     if (questionCounter < quizArr.length){
@@ -31,12 +31,12 @@ function displayNext() {
       if (!(isNaN(selections[questionCounter]))) {
         $('input[value='+selections[questionCounter]+']').prop('checked', true);
       }
-      $('#next').show();
+      next.show();
     }
     //if last question, hide next button and show finish button
     if (questionCounter === quizArr.length){
-      $('#next').hide();
-      $('#finish').show();
+      next.hide();
+      finish.show();
     }
   });
 }
@@ -48,13 +48,6 @@ function displayNext() {
     chooseOption();
     displayNext();
   });
-
-//on click of next button
-  //if finished (currentQuestion === totalQuestions)
-    //grade()
-  //if !finished
-    //current question ++
-    //render next question by doing nextquestion(1)
 
   next.on('click', function(event){
     event.preventDefault();
@@ -72,11 +65,14 @@ function displayNext() {
 
   });
 
+  //render user results on finish button click
   finish.on('click', function(){
-    getHikeInfo(getResults());
-    console.log(getHikeInfo(getResults()));
+    //user results
+    var results = getHikeInfo(getResults());
+    results.render();
+    //maps ready load
+    google.maps.event.addDomListener(window, 'load', initialize());
   });
-
 
 });
 
@@ -88,44 +84,3 @@ function displayNext() {
 
 
 
-
-
-
-
-
-
-
-
-
-//getting value of selected option
-// $('input[name=question1]:checked').val();
-
-//to have questions fade in and out
-// $(document).ready(function(){
-// answers = new Object();
-// $('.option').change(function(){
-//     var answer = ($(this).attr('value'))
-//     var question = ($(this).attr('name'))
-//     answers[question] = answer
-// })
-// var item1 = document.getElementById('questions');
-
-// var totalQuestions = $('.questions').size();
-// var currentQuestion = 0;
-// $questions = $('.questions');
-// $questions.hide();
-// $($questions.get(currentQuestion)).fadeIn();
-// $('#next').click(function(){
-//     $($questions.get(currentQuestion)).fadeOut(function(){
-//         currentQuestion = currentQuestion + 1;
-//         if(currentQuestion == totalQuestions){
-//                var result = sum_values()
-//                //do stuff with the result
-//                alert(result);
-//         }else{
-//         $($questions.get(currentQuestion)).fadeIn();
-//         }
-//     });
-
-// });
-// });
