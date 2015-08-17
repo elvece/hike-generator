@@ -47,7 +47,7 @@ on start quiz button click:
 Iteration 1:
 -have quiz questions on main page
   -create questions- get question from quiz array, append this to
-  -create answers
+  -create answe
 -display results below
 
 Iteration 2:

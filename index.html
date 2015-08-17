@@ -9,10 +9,16 @@
   <body>
     <!-- Main Jumbotron -->
     <div class="jumbotron">
-      <h1 class="row text-center">miHike</h1>
+      <h1 class="row text-center">miHike</h1><br>
+      <!-- Info blurb -->
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <p> miHike aims to provide an easy and efficent hike gerentating service for individuals travelling to Colorado, or individuals simply seeking a straightforward resouce for finding their next adventure.</p>
+        </div>
+      </div>
     </div>
+    <div class="container-fluid page-wrap">
     <!-- Nav Bar - not sure if want right now -->
-    <div class="container-fluid">
     <!--<div class="row text-center">
         <div class="col-md-6 col-md-offset-3">
           <nav>
@@ -22,12 +28,6 @@
           </nav>
         </div>
       </div> -->
-      <!-- Info blurb -->
-      <div class="row text-center">
-        <div class="col-md-6 col-md-offset-3">
-          <p> miHike aims to provide an easy and efficent hike gerentating service for individuals travelling to Colorado, or individuals simply seeking a straightforward resouce for finding their next adventure.</p>
-        </div>
-      </div>
       <!-- Quiz section -->
       <div class="row text-center">
         <div class="col-md-6 col-md-offset-3">
@@ -39,21 +39,23 @@
             </div>
           </div>
           <!-- Next button -->
-          <button id="next" class="btn btn-success" type="submit">Next</button>
+          <button id="next" class="btn btn-success next" type="submit">Next</button>
         </div>
       </div>
       <!-- Results Section -->
       <div class="row text-center" id="results">
       </div>
     </div>
-    <!-- Footer - what do I want here? -->
-    <div class="row text-center">
-      <div class="col-md-6 col-md-offset-3">
-        <footer class="footer">
-          <p><small>&copy;LVC 2015</small></p>
-        </footer>
+    <!-- Footer - add github and linked in logo-->
+    <footer class="footer">
+      <div class="row text-center">
+       <div class="col-md-6 col-md-offset-3">
+          <a href="https://github.com/elvece"><img src="img/github-logo.png" class="logos"></a>
+<!--           <p><small>&copy;LVC 2015</small></p> -->
+          <a href="https://www.linkedin.com/in/lucyvictoria"><img src="img/linkedin-logo.png" class="logos"></a>
+        </div>
       </div>
-    </div>
+    </footer>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>

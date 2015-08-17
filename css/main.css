@@ -15,3 +15,39 @@
 h1 {
   font-size: 45px;
 }
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .page-wrap:after {
+  height: 142px;
+}
+.footer {
+  padding: 50px;
+  background: #DDDDDD;
+  width: 100%;
+}
+
+.next {
+  display: none;
+}
+
+.logos {
+  width: 50px;
+  height: 50px;
+}
