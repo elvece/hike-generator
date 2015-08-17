@@ -1,7 +1,7 @@
 //JS OOP file - data constructors, instances, and methods
 
 //globals
-var totalQuestions = 2;
+// var totalQuestions = quizArr.length;
 var questionCounter = 0;
 var quizArr = [];
 var selections = [];
