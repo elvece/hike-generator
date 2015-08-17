@@ -1,14 +1,13 @@
 // jQuery DOM maniuplation
 
 $(document).on('ready', function() {
-
+  //scrolls to top of page on refresh
+  $(this).scrollTop(0);
   //start button
   var $start = $('#start');
   //next button
   var $next = $('#next');
-  //questions div
-  var $quiz = $('#quiz');
-  //individual question
+  //question div
   var $question = $('#question');
   //hide next button initially
   $next.hide();
@@ -35,13 +34,17 @@ $(document).on('ready', function() {
   //on click of start button, display first question and show next button
   $start.on ('click', function(event){
     event.preventDefault();
-    $start.hide();
+    // $start.hide();
     //create first question
     $question.html(createQuestion(questionCounter)).hide().fadeIn();
     //increase counter by one
     questionCounter++;
     //run show buttons function
     showButtons();
+    //move to questions div
+    $('body').animate({
+      scrollTop: $('#question').offset().top
+    }, 1000);
   });
 
   $next.on('click', function(event){
@@ -52,9 +55,12 @@ $(document).on('ready', function() {
       alert('Please make a selection!');
     }
     if ($next.text() === "Get your hike result!"){
+      //cut off weirdness in first index
+      $('body').animate({
+        scrollTop: $('#results').offset().top
+      }, 1000);
       selections.splice([0],1);
       //render user results
-      console.log(getResults());
       getHikeInfo(getResults()).render();
       //maps ready load
       google.maps.event.addDomListener(window, 'load', initialize());

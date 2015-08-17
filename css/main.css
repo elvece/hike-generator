@@ -1,23 +1,23 @@
+/*Styling*/
+
+/*TO DO: btns, font, section colors*/
 
 #map {
-  width: 950px;
-  height: 600px;
+  width: 50%;
+  height: 45em;
   background-color: #CCC;
 }
 
 .jumbotron {
-  height: 555px;
-/*  width: 800px;*/
-  background-image: url("../img/jumbotron.jpg");
-  background-size: 100% auto;
+  position: relative;
+  height: 100%;
+  width:100%;
+  background: url("../img/jumbotron.jpg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
-h1 {
-  font-size: 45px;
-}
-
-* {
-  margin: 0;
+h3 {
+  margin: 20px;
 }
 
 html, body {
@@ -28,7 +28,7 @@ html, body {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px;
+  margin-bottom: -1px;
 }
 .page-wrap:after {
   content: "";
@@ -51,3 +51,10 @@ html, body {
   width: 50px;
   height: 50px;
 }
+
+.question-style {
+  font-size: 22px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
