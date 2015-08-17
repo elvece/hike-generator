@@ -15,7 +15,7 @@ $(document).on('ready', function() {
 
 
   //gets the value of the checked user selection and pushes the value to selections array
-  function getOption() {
+  function getSelection() {
     selections[questionCounter] = $('input[name="option"]:checked').val();
   }
 
@@ -36,14 +36,8 @@ $(document).on('ready', function() {
   $start.on ('click', function(event){
     event.preventDefault();
     $start.hide();
-
-    // getOption();
-    // displayNext();
-
     //create first question
     $question.html(createQuestion(questionCounter)).hide().fadeIn();
-    //get selections
-    getOption();
     //increase counter by one
     questionCounter++;
     //run show buttons function
@@ -51,17 +45,21 @@ $(document).on('ready', function() {
   });
 
   $next.on('click', function(event){
+    getSelection();
     event.preventDefault();
     // if no user selection, progress is stopped until selection is made
     if ($('input[name="option"]:checked').length !== 1) { // had previously isNaN(selections[questionCounter]
       alert('Please make a selection!');
     }
     if ($next.text() === "Get your hike result!"){
+      selections.splice([0],1);
       //render user results
+      console.log(getResults());
       getHikeInfo(getResults()).render();
       //maps ready load
       google.maps.event.addDomListener(window, 'load', initialize());
       $next.hide();
+      $question.hide();
     }
     else {
       $next.hide();
@@ -70,7 +68,6 @@ $(document).on('ready', function() {
         if (questionCounter < quizArr.length){
           $question.html(createQuestion(questionCounter)).fadeIn();
         }
-        getOption();
         questionCounter++;
         showButtons();
       });
