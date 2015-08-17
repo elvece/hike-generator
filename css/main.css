@@ -1,5 +1,17 @@
+
 #map {
-  width: 600px;
-  height: 500px;
+  width: 950px;
+  height: 600px;
   background-color: #CCC;
+}
+
+.jumbotron {
+  height: 555px;
+/*  width: 800px;*/
+  background-image: url("../img/jumbotron.jpg");
+  background-size: 100% auto;
+}
+
+h1 {
+  font-size: 45px;
 }

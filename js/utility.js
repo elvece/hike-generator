@@ -73,8 +73,7 @@ function initialize() {
   var marker = new google.maps.Marker({
     position: latLng,
     map: map,
-    title: results.name
-  });
+    title: results.name  });
 }
 
 
