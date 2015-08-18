@@ -73,7 +73,7 @@ $(document).on('ready', function() {
       $('.results-box').show();
       //move to results div
       $('body').animate({
-        scrollTop: $('#results').offset().top
+        scrollTop: $('.container-fluid').offset().top
       }, 1000);
       $next.hide();
       $question.hide();

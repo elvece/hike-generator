@@ -10,14 +10,6 @@
   display: none;
 }
 
-.quiz-box{
-  display: none;
-}
-
-.results-box {
-  margin-top: 300px;
-}
-
 #map {
   width: 50%;
   height: 45em;
