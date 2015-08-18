@@ -3,15 +3,22 @@
 $(document).on('ready', function() {
   //scrolls to top of page on refresh
   $(this).scrollTop(0);
+  //hides quiz section initially
+  $('.quiz-box').hide();
+  //hides results section initially
+  $('.results-box').hide();
   //start button
   var $start = $('#start');
   //next button
   var $next = $('#next');
+  //again button
+  var $again = $('#again');
   //question div
   var $question = $('#question');
   //hide next button initially
   $next.hide();
-
+  //hide again button initially
+  $('#again').hide();
 
   //gets the value of the checked user selection and pushes the value to selections array
   function getSelection() {
@@ -34,7 +41,8 @@ $(document).on('ready', function() {
   //on click of start button, display first question and show next button
   $start.on ('click', function(event){
     event.preventDefault();
-    // $start.hide();
+    $('.quiz-box').show();
+    $start.hide();
     //create first question
     $question.html(createQuestion(questionCounter)).hide().fadeIn();
     //increase counter by one
@@ -55,17 +63,22 @@ $(document).on('ready', function() {
       alert('Please make a selection!');
     }
     if ($next.text() === "Get your hike result!"){
-      //cut off weirdness in first index
-      $('body').animate({
-        scrollTop: $('#results').offset().top
-      }, 1000);
+      //cut off weirdness in first index of user selections array
       selections.splice([0],1);
       //render user results
       getHikeInfo(getResults()).render();
       //maps ready load
       google.maps.event.addDomListener(window, 'load', initialize());
+      //show results section
+      $('.results-box').show();
+      //move to results div
+      $('body').animate({
+        scrollTop: $('#results').offset().top
+      }, 1000);
       $next.hide();
       $question.hide();
+      //show get a new hike button
+      // $again.show();
     }
     else {
       $next.hide();
@@ -85,6 +98,21 @@ $(document).on('ready', function() {
 
   });
 
+  // $again.on('click', function(event){
+  //   event.preventDefault();
+  //   $('#results').html("");
+  //   $again.hide();
+  //   //create first question
+  //   $question.html(createQuestion(questionCounter)).hide().fadeIn();
+  //   //increase counter by one
+  //   questionCounter++;
+  //   //run show buttons function
+  //   showButtons();
+  //   //move to questions div
+  //   $('body').animate({
+  //     scrollTop: $('#question').offset().top
+  //   }, 1000);
+  // });
 
 });
 

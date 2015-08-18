@@ -2,6 +2,22 @@
 
 /*TO DO: btns, font, section colors*/
 
+.next {
+  display: none;
+}
+
+.again {
+  display: none;
+}
+
+.quiz-box{
+  display: none;
+}
+
+.results-box {
+  margin-top: 300px;
+}
+
 #map {
   width: 50%;
   height: 45em;
@@ -14,10 +30,15 @@
   width:100%;
   background: url("../img/jumbotron.jpg") no-repeat center center;
   background-size: 100% 100%;
+  margin-bottom: 0px;
+}
+
+.main {
+  margin-top: -35px;
 }
 
 h3 {
-  margin: 20px;
+  margin: 25px;
 }
 
 html, body {
@@ -27,7 +48,7 @@ html, body {
 
 .page-wrap {
   min-height: 100%;
-  /* equal to footer height */
+  /* equal to footer height (normally) */
   margin-bottom: -1px;
 }
 .page-wrap:after {
@@ -43,10 +64,6 @@ html, body {
   width: 100%;
 }
 
-.next {
-  display: none;
-}
-
 .logos {
   width: 50px;
   height: 50px;
@@ -54,7 +71,36 @@ html, body {
 
 .question-style {
   font-size: 22px;
-  margin-top: 100px;
-  margin-bottom: 10px;
+  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
+/*.results-style {
+  position: absolute;
+  margin-top:
+}
+*/
+/*.btn {
+  background-color: #fff;
+  color: #0F0F0F;
+}
+*/
+.ghost-button-transition {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #0F0F0F;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+  background-color: #12095A;
+  color: #fff;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
