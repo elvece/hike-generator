@@ -1,7 +1,7 @@
 //JS Utility file - helper functions
 
 //create question on DOM using index from quiz array
-function createQuestion (index){
+function createQuestion (index){//change name to renderQuestion***
   quizArr[index].render();
 }
 
@@ -48,6 +48,7 @@ function getResults(){
       }
     }
 }
+
 
 function getHikeInfo(num){
   for (var i = 0; i < hikeArr.length; i++) {

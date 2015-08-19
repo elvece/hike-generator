@@ -41,7 +41,9 @@ $(document).on('ready', function() {
   //on click of start button, display first question and show next button
   $start.on ('click', function(event){
     event.preventDefault();
+    //show the quiz area
     $('.quiz-box').show();
+    //hide start button
     $start.hide();
     //create first question
     $question.html(createQuestion(questionCounter)).hide().fadeIn();
@@ -50,7 +52,7 @@ $(document).on('ready', function() {
     //run show buttons function
     showButtons();
     //move to questions div
-    $('body').animate({
+    $('html, body').animate({
       scrollTop: $('#question').offset().top
     }, 1000);
   });
@@ -59,9 +61,9 @@ $(document).on('ready', function() {
     getSelection();
     event.preventDefault();
     // if no user selection, progress is stopped until selection is made
-    if ($('input[name="option"]:checked').length !== 1) { // had previously isNaN(selections[questionCounter]
-      alert('Please make a selection!');
-    }
+    // if ($('input[name="option"]:checked').length !== 1) { // had previously isNaN(selections[questionCounter]
+    //   alert('Please make a selection!');
+    // }
     if ($next.text() === "Get your hike result!"){
       //cut off weirdness in first index of user selections array
       selections.splice([0],1);
@@ -72,16 +74,20 @@ $(document).on('ready', function() {
       //show results section
       $('.results-box').show();
       //move to results div
-      $('body').animate({
+      $('html, body').animate({
         scrollTop: $('.container-fluid').offset().top
       }, 1000);
+      //hide next button
       $next.hide();
+      //hide questions
       $question.hide();
       //show get a new hike button
       // $again.show();
     }
     else {
+      //hide next button
       $next.hide();
+      //clear question div then run function
       $question.html("").fadeOut(function() {
       //if question counter is less than the length of the quiz array, make the next question appear by creating it using the create question function using the current value of the question counter as the index
         if (questionCounter < quizArr.length){

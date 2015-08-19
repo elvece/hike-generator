@@ -81,4 +81,5 @@ half day hike, intermediate, lake == 4
 --how do I handle if not all categories are met?
 
 
-
+***sections for colors
+anchor tag with href of where you want it to go (section id), class page scroll?
