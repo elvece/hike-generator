@@ -2,6 +2,15 @@
 
 /*TO DO: btns, font, section colors*/
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
 .next {
   display: none;
 }
@@ -31,11 +40,6 @@
 
 h3 {
   margin: 25px;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
 }
 
 .page-wrap {
