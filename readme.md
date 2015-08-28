@@ -1,4 +1,4 @@
-## miHike: Hiking Suggestion Generator
+## Hike Generator
 
 ###Project Description
 miHike aims to provide an easy and efficent hike gerentating service for individuals travelling to Colorado, or individuals simply seeking a straightforward resouce for finding their next adventure.
