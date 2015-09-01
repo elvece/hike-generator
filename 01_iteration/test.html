@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>miHike</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <!-- Main Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="row text-center">miHike</h1>
+    </div>
+    <!-- Nav Bar - not sure if want right now -->
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <nav>
+            <a href="/about/">About || </a>
+            <a href="/all/">All Hikes || </a>
+            <a href="/contact/">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <!-- Info blurb -->
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <p> miHike aims to provide an easy and efficent hike gerentating service for individuals travelling to Colorado, or individuals simply seeking a straightforward resouce for finding their next adventure.</p>
+        </div>
+      </div>
+      <!-- Button to start quiz -->
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <button id="start" class="btn btn-success" type="submit">Start Quiz</button>
+        </div>
+      </div>
+      <!-- Quiz Questions -->
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <!-- Question 1 -->
+          <div id="questions">
+            <p><strong>How long are you looking to hike for?</strong></p>
+            <form id="quiz">
+              <input class="option" type="radio" name="question1" value=1>A few hours<br>
+              <input class="option" type="radio" name="question1" value=2>Half-day<br>
+              <input class="option" type="radio" name="question1" value=3>Whole-day<br>
+            </form>
+          </div>
+          <!-- Question 2 -->
+          <div id="questions">
+            <p><strong>How would you rate your ability level?</strong></p>
+            <form id="quiz">
+              <input class="option" type="radio" name="question2" value=1>Beginner<br>
+              <input class="option" type="radio" name="question2" value=2>Intermediate<br>
+              <input class="option" type="radio" name="question2" value=3>Advanced<br>
+            </form>
+          </div>
+          <!-- Question 3 -->
+          <div id="questions">
+            <p><strong>Select a feature you are interested in:</strong></p>
+            <form id="quiz">
+              <input class="option" type="radio" name="question1" value=1>Views<br>
+              <input class="option" type="radio" name="question1" value=2>Waterfalls<br>
+              <input class="option" type="radio" name="question1" value=3>Lakes<br>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Results Section -->
+      <div class="row text-center">
+        <h2> Maroon Bells</h2>
+      </div>
+      <!-- First Row -->
+      <div class="row">
+        <!-- Image -->
+        <div class="col-md-4 col-md-offset-2">
+          <a href="#" class="thumbnail">
+            <img src="img/maroon-bells.jpg" alt="Maroon Bells">
+          </a>
+                <!-- Second Row -->
+      <div class="row text-center">
+        <!-- Stats -->
+        <div class="col-md-12">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Distance: </strong>5 miles
+            </li>
+            <li class="list-group-item">
+              <strong>Duration: </strong>2 hours
+            </li>
+            <li class="list-group-item">
+              <strong>Difficulty: </strong>Easy
+            </li>
+          </ul>
+        </div>
+        </div>
+        </div>
+        <!-- Blurb -->
+        <div class="col-md-4">
+          <p> Meh quis odio dreamcatcher iPhone, Banksy aesthetic banh mi. Eu chambray eiusmod, church-key sartorial gastropub deserunt Bushwick pour-over organic four dollar toast selvage typewriter. Flannel Pitchfork artisan, mumblecore ethical viral ex deep v direct trade culpa fap letterpress sartorial fashion axe. Crucifix veniam commodo distillery, DIY Helvetica art party cold-pressed flexitarian odio. Raw denim +1 labore ennui, shabby chic Bushwick Banksy blog Shoreditch ethical reprehenderit. Ad odio semiotics, kogi Etsy umami seitan synth meggings plaid heirloom Blue Bottle leggings keffiyeh. Put a bird on it paleo velit, nesciunt magna fashion axe meggings qui sriracha Wes Anderson gentrify.Meh quis odio dreamcatcher iPhone, Banksy aesthetic banh mi. Eu chambray eiusmod, church-key sartorial gastropub deserunt Bushwick pour-over organic four dollar toast selvage typewriter. Flannel Pitchfork artisan, mumblecore ethical viral ex deep v direct trade culpa fap letterpress sartorial fashion axe. Crucifix veniam commodo distillery, DIY Helvetica art party cold-pressed flexitarian odio. Raw denim +1 labore ennui, shabby chic Bushwick Banksy blog Shoreditch ethical reprehenderit. Ad odio semiotics, kogi Etsy umami seitan synth meggings plaid heirloom Blue Bottle leggings keffiyeh. Put a bird on it paleo velit, nesciunt magna fashion axe meggings qui sriracha Wes Anderson gentrify.Raw denim +1 labore ennui, shabby chic Bushwick Banksy blog Shoreditch ethical reprehenderit. Ad odio semiotics, kogi Etsy umami seitan synth meggings plaid heirloom Blue Bottle leggings keffiyeh. Put a bird on it paleo velit, nesciunt magna fashion axe meggings qui sriracha Wes Anderson gentrify.</p>
+        </div>
+      </div>
+
+        <!-- Map -->
+        <div class="row">
+          <div class="col-md-4" id="map">
+          </div>
+        </div>
+    </div>
+    <!-- Footer - what do I want here? -->
+    <div class="row text-center">
+      <div class="col-md-5 col-md-offset-3">
+        <footer class="footer">
+          <p><small>&copy;LVC 2015</small></p>
+        </footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/dom.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/objects.js"></script>
+  </body>
+</html>

@@ -80,6 +80,7 @@ half day hike, intermediate, lake == 4
 --find most frequent option and return that result
 --how do I handle if not all categories are met?
 
+*conditional logic, skip logic, conditional branching
 
 ***sections for colors
 anchor tag with href of where you want it to go (section id), class page scroll?

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Find a Hike!</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <!-- Main Jumbotron -->
+    <div class="jumbotron">
+      <div class="container main">
+        <h1 class="row text-center">Find a Hike</h1><br>
+        <!-- Info blurb -->
+        <div class="row text-center">
+          <div class="col-md-6 col-md-offset-3">
+            <p> Find a Hike aims to provide an easy and efficent hike gerentating service for individuals travelling to Colorado, or individuals simply seeking a straightforward resouce for finding their next adventure.</p><br>
+            <!-- Start Button -->
+            <button id="start" class="btn ghost-button-transition" type="submit">Find your hike!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid page-wrap quiz-box">
+    <!-- Nav Bar - not sure if want right now -->
+    <!--<div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <nav>
+            <a href="/about/">About || </a>
+            <a href="/all/">All Hikes || </a>
+            <a href="/contact/">Contact</a>
+          </nav>
+        </div>
+      </div> -->
+      <!-- Quiz Section -->
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <!-- Quiz Questions Section -->
+          <div class="question-style" id="question">
+          </div>
+          <!-- Next button -->
+          <button id="next" class="btn next ghost-button-transition" type="submit">Next</button>
+        </div>
+      </div>
+      <!-- Results Section -->
+      <div class="container results-box">
+        <div class="row text-center"  id="results">
+          <!-- Again button -->
+          <button id="again" class="btn again ghost-button-transition" type="submit">Find another hike!</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row text-center">
+       <div class="col-md-6 col-md-offset-3">
+          <a href="https://github.com/elvece"><img src="img/github-logo.png" class="logos"></a>
+<!--           <p><small>&copy;LVC 2015</small></p> -->
+          <a href="https://www.linkedin.com/in/lucyvictoria"><img src="img/linkedin-logo.png" class="logos"></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/utility.js"></script>
+    <script type="text/javascript" src="js/dom.js"></script>
+
+  </body>
+</html>
+
